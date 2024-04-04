@@ -27,10 +27,12 @@ const Layout = ({ children }) => {
           width: '100vw',
           height: '100vh',
           pointerEvents: 'none',
+          zIndex: 10,
         }}
         eventSource={ref}
         eventPrefix='client'
       />
+      <canvas id='gradient' width='512' height='10' style={{ position: 'fixed', top: 0, left: '-100vw' }} />
     </div>
   )
 }
